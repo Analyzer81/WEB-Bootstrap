@@ -254,5 +254,43 @@ body {
     padding-bottom: 0;
 }
 
+.paragraf1  {
+    text-align: center;
+    color:white;
+    padding-top: 150px;
+}
+.paragraf1 p {
+    text-align: center;
+    color:white;
+}
+.paragraf2 p {
+    text-align: center;
+    color:white;
+}
+.paragraf3 p {
+    text-align: center;
+    color:white;
+}
+.paragraf3-img img {
+width: 300px;
+height: 400px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card img {
+    width: 400px;
+height: 300px;
+}
+
+.card {
+    align-items: center;
+}
+
+.gallery {
+    text-align: center;
+}
 
 
