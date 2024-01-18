@@ -8,6 +8,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>Trio Kitchen</title>
 </head>
 
@@ -48,7 +49,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#drinks" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        <a href="#drinks" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Food</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
@@ -58,7 +59,7 @@
                                 <a href="lunch.html" class="dropdown-item">Lunch</a>
                             </li>
                             <li>
-                                <a href="dessert.html" class="dropdown-item">Dessert</a>
+                                <a href="dessert.html" class="dropdown-item active">Dessert</a>
                             </li>
                         </ul>
                     </li>
@@ -66,83 +67,62 @@
                         <a href="About.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="contact" class="contact">
-        <div class="container form">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2>Contact Us</h2>
-                        <p>If you have any questions, please feel free to hit that send button. Our team will do their
-                            best to answer you as soon as possible. <br> Also, if you'd like, you can send reviews via this form.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row form-content md-0">
-                <div class="col-md-12 p-0 pt-4 pb-4">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="col-mb-3">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" required placeholder="Your name">
-                                </div>
-                            </div>
-                            <div class="col-mb-3">
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" required placeholder="Your email">
-                                </div>
-                            </div>
-                            <div class="col-mb-3 text">
-                                <div class="mb-3">
-                                    <textarea name="" id="" rows="3" required class="form-control"
-                                        placeholder="Your query"></textarea>
-                                </div>
-                            </div>
-                            <button class="btn btn-dark">Send</button>
-                        </div>
-
-                        <div class="col-md-5 adress">
-
-                            <div class="d-flex">
-                                <i class="bi bi-geo-alt-fill">
-                                    Adress: 5 Wip Ma Wop Ma Gate, York YO1 8BL England
-                                </i>
-                            </div>
-                            <hr>
-                            <div class="d-flex">
-                                <i class="bi bi-telephone">
-                                    Reservations +44 1904 651868
-                                </i>
-                            </div>
-                            <hr>
-                            <div class="d-flex">
-                                <i class="bi bi-telephone">
-                                    Order Food +44 1906 652360
-                                </i>
-                            </div>
-                            <hr>
-                            <div class="d-flex">
-                                <i class="bi bi-envelope-fill">
-                                    Email: trio.kitchen@gmail.com
-                                </i>
-                            </div>
-                            <hr>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
+    <!-- Drinks Gallery -->
+	<div class="h-100 d-flex flex-column image-gallery">
+		<div class="row d-flex justify-content-center align-items-center flex-grow-1">
+			<div class="card col col-sm-3 col-10 mx-3 pt-3 gallery-card text-white" onclick="$('#modal1').modal('show')">
+				<div class="modal fade" tabindex="-1" role="dialog" id="modal1" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<img class="gallery-image-full" src="./Slike/dessert1.jpg" alt="Dessert 1"/>
+						</div>
+					</div>
+				</div>
+				<img src="./Slike/dessert1.jpg" class="card-img-top gallery-image" alt="Dessert 1"/>
+				<div class="card-body">
+					<h5 class="card-title">Dessert 1</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			
+			<div class="card col col-sm-3 col-10 mx-3 pt-3 gallery-card text-white" onclick="$('#modal2').modal('show')">
+				<div class="modal fade" tabindex="-1" role="dialog" id="modal2" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<img class="gallery-image-full" src="./Slike/dessert2.jpg" alt="Dessert 2"/>
+						</div>
+					</div>
+				</div>
+				<img src="./Slike/dessert2.jpg" class="card-img-top gallery-image" alt="Dessert 2"/>
+				<div class="card-body">
+					<h5 class="card-title">Dessert 2</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+			
+			<div class="card col col-sm-3 col-10 mx-3 pt-3 gallery-card text-white" onclick="$('#modal3').modal('show')">
+				<div class="modal fade" tabindex="-1" role="dialog" id="modal3" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<img class="gallery-image-full" src="./Slike/dessert3.jpg" alt="Dessert 3"/>
+						</div>
+					</div>
+				</div>
+				<img src="./Slike/dessert3.jpg" class="card-img-top gallery-image" alt="Dessert 3"/>
+				<div class="card-body">
+					<h5 class="card-title">Dessert 3</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!--Footer-->
 
