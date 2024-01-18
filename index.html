@@ -11,7 +11,11 @@
     <title>Trio Kitchen</title>
 </head>
 
-<body>
+<!--Natalija Spasojević, AI13/2021-->
+<!--Anja Maričić, AI17/2021-->
+<!--Nađa Lovrić, AI5/2021-->
+
+<body onload="startTime()">
 
     <!--Navigation bar-->
 
@@ -157,12 +161,11 @@
                 <div class="col-12 col-sm-6 align-self-center">
                     <div class="steps__content-width">
                         <h1 class="header h2 mb-4">Nadja Lovric</h1>
-                        <p class="text mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur sed
-                            fuga
-                            quod
-                            aspernatur omnis labore accusantium atque nostrum tempore dicta vero, iure eaque illo nihil
-                            eius
-                            neque non modi deserunt!</p>
+                        <p class="text mb-4">I'm 20 years old and I was raised in Ruma. I like to go out and hang with
+                            friends and drink beer.
+                            My favourite TV Show is Friends, and Chandler is my favourite character. For 8 years I
+                            trained Athletics and my discipline was 100m hurdles.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -181,10 +184,9 @@
             <div class="col-12 col-sm-6 align-self-center">
                 <div class="steps__content-width">
                     <h1 class="header h2 mb-4">Anja Maricic</h1>
-                    <p class="text-dark mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur sed
-                        fuga quod
-                        aspernatur omnis labore accusantium atque nostrum tempore dicta vero, iure eaque illo nihil eius
-                        neque non modi deserunt!</p>
+                    <p class="text-dark mb-4">I'm 22 years old and I was born in Ruma. I like music, and play multiple
+                        instuments. My favourite movie is La La Land. I played football for 12 years, until I hurt my
+                        foot and had to stop.</p>
                 </div>
             </div>
         </div>
@@ -250,10 +252,10 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-    
-                
-    
-                <div class="col text-center section-padding">
+
+
+
+                <div class="col working-hours text-center">
                     <div class="steps__content-width">
                         <h1 class="h2 mb-4">Working Hours</h1>
                         <p class="mb-4">
@@ -269,10 +271,30 @@
                         </p>
                     </div>
                 </div>
-    
+
             </div>
         </div>
-        
+
+        <div class="clock" id="txt"></div>
+
+        <script>
+            function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+            }
+
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+
 
     </section>
 

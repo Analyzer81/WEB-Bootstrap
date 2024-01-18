@@ -64,6 +64,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
+    
 }
 
 .navbar-dark:focus,
@@ -362,6 +363,7 @@ height: 300px;
 .container2 {
     padding: 3rem;
 }
+
 .container2 h1 {
     font-size: 3rem;
     padding: 3rem;
@@ -404,4 +406,17 @@ height: 300px;
 .modal-content .gallery-image-full {
 	max-width: 800px;
 	max-height: 600px;
+}
+
+.clock {
+    text-align: center;
+    width: 100px;
+    color: white;
+    background-color: #212529;
+    font-size: 20px;
+    margin: auto;
+}
+
+.working-hours {
+    padding-top: 40px;
 }
