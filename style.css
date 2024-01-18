@@ -300,6 +300,11 @@ width: 300px;
 height: 400px;
 }
 
+.paragraf4-heading h1 {
+    text-align: center;
+    color:#8f7d60;
+}
+
 .card-body h4 {
     color:#892828;
 }
@@ -348,3 +353,43 @@ height: 300px;
 	background-color: white;
 }
 
+.container {
+    padding: 3rem;
+}
+.container h1 {
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #892828;
+}
+.caption {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.thumbnail:hover {
+    transform: translateY(-4px);
+}
+.img-container:hover .overlay {
+    opacity:1;
+}
