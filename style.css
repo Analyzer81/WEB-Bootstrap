@@ -305,6 +305,7 @@ height: 400px;
     color:#8f7d60;
 }
 
+
 .card-body h4 {
     color:#892828;
 }
@@ -359,7 +360,6 @@ height: 300px;
 	background-color: white;
 }
 
-<<<<<<< HEAD
 .container {
     padding: 3rem;
 }
@@ -367,6 +367,7 @@ height: 300px;
     font-size: 3rem;
     padding: 3rem;
     text-align: center;
+    color:#8f7d60;
 }
 .image {
     display: block;
@@ -400,9 +401,7 @@ height: 300px;
 .img-container:hover .overlay {
     opacity:1;
 }
-=======
 .modal-content .gallery-image-full {
 	max-width: 800px;
 	max-height: 600px;
 }
->>>>>>> 885cb8ad1f8e88bddb8fa5e34e4e6f09ef5ec4e5
