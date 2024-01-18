@@ -263,17 +263,45 @@ body {
     text-align: center;
     color:white;
 }
+.paragraf1-heading h1 {
+    text-align: center;
+    color:#8f7d60;
+}
+
+.paragraf2  {
+    text-align: center;
+    color:white;
+    padding-top: 150px;
+}
 .paragraf2 p {
     text-align: center;
     color:white;
+}
+.paragraf2-heading h1 {
+    text-align: center;
+    color:#8f7d60;
+}
+
+.paragraf3  {
+    text-align: center;
+    color:white;
+    padding-top: 150px;
 }
 .paragraf3 p {
     text-align: center;
     color:white;
 }
+.paragraf3-heading h1 {
+    text-align: center;
+    color:#8f7d60;
+}
 .paragraf3-img img {
 width: 300px;
 height: 400px;
+}
+
+.card-body h4 {
+    color:#892828;
 }
 
 .card p {
