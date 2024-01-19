@@ -338,10 +338,15 @@ height: 300px;
 }
 
 .gallery-card {
-	height: 30rem;
+	height: 35rem;
 	padding-top: 0.5rem;
 	margin-top: 0.5rem;
 }
+
+.card.gallery-card p {
+    text-align: justify;
+}
+
 
 .gallery-card:hover {
 	border: 2px solid black;
