@@ -273,10 +273,12 @@ body {
 .paragraf1 p {
     text-align: center;
     color:white;
+	font-size: 18px;
 }
 .paragraf1-heading h1 {
     text-align: center;
     color:#8f7d60;
+	font-family: 'Roboto', sans-serif;
 }
 
 .paragraf2  {
@@ -287,10 +289,12 @@ body {
 .paragraf2 p {
     text-align: center;
     color:white;
+	font-size: 18px;
 }
 .paragraf2-heading h1 {
     text-align: center;
     color:#8f7d60;
+	font-family: 'Roboto', sans-serif;
 }
 
 .paragraf3  {
@@ -301,10 +305,12 @@ body {
 .paragraf3 p {
     text-align: center;
     color:white;
+	font-size: 18px;
 }
 .paragraf3-heading h1 {
     text-align: center;
     color:#8f7d60;
+	font-family: 'Roboto', sans-serif;
 }
 .paragraf3-img img {
 width: 300px;
@@ -314,6 +320,7 @@ height: 400px;
 .paragraf4-heading h1 {
     text-align: center;
     color:#8f7d60;
+	font-family: 'Roboto', sans-serif;
 }
 
 .card-body h4 {
@@ -339,12 +346,13 @@ height: 300px;
 
 .gallery-image {
 	width: 100%;
-	height: 22rem;
+	height: auto;
+	object-fit: cover;
 }
 
 .card img.gallery-image {
 	width: 100%;
-	height: 22rem;
+	height: 19.5rem;
 }
 
 .gallery-card {
